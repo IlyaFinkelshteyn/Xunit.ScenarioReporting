@@ -11,9 +11,6 @@ assembly_info:
 
 configuration: Release
 
-before_build:
-  - nuget restore Xunit.ScenarioReporting.sln
-
 build:
   project:  Xunit.ScenarioReporting.sln
 
