@@ -17,8 +17,7 @@ before_build:
 build:
   project:  Xunit.ScenarioReporting.sln
 
-test_script:
-  - ps: Install-Package Appveyor.TestLogger -Version 1.1.0-post-rtm
+test_script:  
   - dotnet test Xunit.ScenarioReporting.Tests/Xunit.ScenarioReporting.Tests.csproj --no-build
   
   #- ps: .\scripts\packagenuget.ps1
